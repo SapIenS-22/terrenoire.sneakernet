@@ -4,7 +4,7 @@ Glyphes
 
 @font-face {
   font-family: "UnormativeFraktur";
-  src: url("UnormativeFraktur.woff2") format("woff2");
+  src: url(".../Glyphes/woff2/UnormativeFraktur.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@ Glyphes
 
 @font-face {
   font-family: "Cambria";
-  src: url("cambriastyle") ;
+  src: url(".../Glyphes/woff2/Cambria_WO2_Regular.woff2") ;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
