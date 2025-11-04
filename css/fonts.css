@@ -1,0 +1,19 @@
+/*---------------------
+Glyphes
+---------------------*/
+
+@font-face {
+  font-family: "UnormativeFraktur";
+  src: url("UnormativeFraktur.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cambria";
+  src: url("cambriastyle") ;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

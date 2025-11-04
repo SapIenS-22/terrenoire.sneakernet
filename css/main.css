@@ -1,0 +1,114 @@
+@import "fonts.css";
+
+body {
+	font-family: "UnormativeFraktur";
+	font-size: 1.9vw;
+	font-weight: 200;
+	color: black;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	background-color: #D3D3D3;
+}
+
+td {
+	border-bottom: 1px solid darkred;
+	padding-top: 4px;
+}
+
+.petit {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.petit2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	filter: blur(0.9px);
+	color: fuchsia;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #EBEBEB;
+	border-color: #EBEBEB;
+}
+
+tbody tr:hover {
+	background-color: #FFFF00;
+	border: #FFFF00;
+}
+
+.titre {
+	text-align: left;
+	color: black;
+	height: 50px;
+	line-height: 50px;
+	/*border: 2px solid black; */
+	text-transform: uppercase;
+}
+
+#txt-titre {
+	margin-left: 0px;
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+.lisez-moi {
+	color: blueviolet;
+	font-style: oblique;
+	font-size: 15px;
+	display: none;
+}
+
+.intro {
+	bottom: 0px;
+}
+
+#contact {
+	position: fixed;
+	right: 5px;
+	bottom: -8px;
+	font-weight: 900;
+}
+
+.gif {
+	width: 45px;
+	margin-left: 4px;
+}
+
+.gif_a_propos {
+	width: 30px;
+	vertical-align: middle;
+}
+
+.logo {
+	width: 10vw;
+}
+
+.bloc_logo {
+	position: fixed;
+	right: 6px;
+}
+
+.bloc_contact {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+}
+
+.contact {
+	width: 80px;
+}
