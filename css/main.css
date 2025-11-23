@@ -1,11 +1,37 @@
-@import "fonts.css";
-
 body {
-	font-family: "UnormativeFraktur";
+	font-family: "Cambria";
 	font-size: 1.9vw;
 	font-weight: 200;
 	color: black;
+	display: flex;
+	margin: 0;
 }
+
+.page-container {
+	display: flex;
+	min-height: 100vh;
+}
+
+/*marge latérale gauche*/
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 20%;
+	padding: 2rem;
+	box-sizing: border-box;
+	overflow-y: auto;
+	font-size: 0.9vw;
+}
+
+/*partie principale de la droite*/
+.content {
+	margin-left: 20%;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
 
 table {
 	width: 100%;
@@ -14,36 +40,36 @@ table {
 
 th {
 	text-align: left;
-	background-color: #D3D3D3;
+	padding-top: 4px;
 }
 
 td {
-	border-bottom: 1px solid darkred;
 	padding-top: 4px;
 }
 
 .petit {
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 15px;
+	font-weight: 200;
 }
 
 .petit2 {
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 15px;
+	font-weight: 200;
 }
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 a:hover {
-	filter: blur(0.9px);
+	filter: blur(1.2px);
 	color: fuchsia;
 }
 
 tbody tr:nth-child(odd) {
-	background-color: #EBEBEB;
-	border-color: #EBEBEB;
+	background-color: none;
+	border-color: none;
 }
 
 tbody tr:hover {
@@ -52,12 +78,16 @@ tbody tr:hover {
 }
 
 .titre {
+	font-family: "Cambria";
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
 	text-align: left;
 	color: black;
-	height: 50px;
-	line-height: 50px;
+	height: 70px;
+	line-height: 10px;
 	/*border: 2px solid black; */
-	text-transform: uppercase;
+	
 }
 
 #txt-titre {
@@ -67,7 +97,7 @@ tbody tr:hover {
 }
 
 .lisez-moi {
-	color: blueviolet;
+	color: black;
 	font-style: oblique;
 	font-size: 15px;
 	display: none;
@@ -112,3 +142,25 @@ tbody tr:hover {
 .contact {
 	width: 80px;
 }
+
+.hover-link {
+	position: relative;
+	display: inline-block;
+	margin-right: 0px;
+}
+
+.hover-link img {
+	position: absolute;
+	top: 0;
+	left: 110%;
+	width: 200px;
+	height: auto;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1s ease;
+}
+
+.hover-link:hover img {
+	opacity: 1;
+}
+
